@@ -19,11 +19,14 @@
     position: absolute;
     margin:10% 20% 10% 25%;
     display: flex;
-    background-color: rgb(173, 167, 158);
+    background-color: rgb(140, 243, 76);
     height: 80%;
-    transform: scale(1.15);
+    transition: transform 0.3s ease;  
     
+}
 
+.container .window:hover{
+   transform: scale(1.15); 
 }
 
 .container .window .image{
@@ -44,19 +47,93 @@
 
 .container .window .details{
     position: relative;
+    padding:5%;
     width: 60%;
-    display: flex;
-    justify-content: center;
+    text-align: left;
     z-index: 9;
     box-shadow: 2px 2px 2px black;
     border-radius: 20px;
     
 }
 
+.container .window .details h1,h2,h3{
+    line-height: 50px;
+
+}
+
+.container .window .details h1{
+    text-shadow: 2px 2px 2px white;
+    font-size: 40px;
+}
+
+.container .window .details h3{
+    color:red;
+    text-shadow:1px 2px 2px black;
+    font-size: 32px;
+}
+
 .container .window .details p{
-    width: 90%;
-    padding: 5%;
-    height: fit-content;
+    padding-top:20px;
+    font-size: 19px;
+}
+
+form{
+    position: absolute;
+    left:50%;
+    top:50%;
+    z-index: 11;
+    font-size: 18px;
+}
+
+.size-select{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.para {
+   padding-right: 45px;
+   font-size: 25px;
+}
+
+.size-select lable{
+    padding: 10px;
     
 }
 
+.size-select lable input:checked + span{
+    color:blue;
+    font-weight: bolder;
+}
+
+.size-select input{
+    width:20px;
+    height: 20px;
+}
+
+.color-select{
+    display:flex;
+    
+}
+
+.color-select lable{
+    padding: 5px 30px 10px 3px;
+    
+}
+
+.color-select input{
+    height: 30px;
+    width:30px;
+    cursor: pointer;
+}
+
+.color-select span{
+
+    border:2px solid black;
+}
+
+
+.color-1{
+    background-color: red;
+}
