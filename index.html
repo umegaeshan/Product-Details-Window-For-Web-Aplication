@@ -11,64 +11,76 @@
     <div class="container">
         <div class="window">
             <div class="image">
-                <img src="9999933.jpg" alt="first image"  >
+                <img src="9999933.jpg" alt="first image" id="product-image" >
+            </div>
+            <div class="controlers">
+                <button class="btn active"> </button>
+                <button class="btn"> </button>
+                <button class="btn"> </button>
             </div>
             <div class="details">
                 <h1> Casual T Shirt</h1>
                 <h2> $15.00</h2>
                 <h3> 30% OFF</h3>
-                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita distinctio nemo adipisci? Laudantium culpa nostrum maiores voluptatibus neque! Cumque, eveniet.</p>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum culpa tempora magni inventore. Perferendis fugit esse aliquid, quod maxime, nesciunt quaerat eligendi, ratione non molestiae ab dignissimos numquam.</p>
             </div>
              <form >
                 <div class="size-select">
                     <p class="para"> Size</p>
 
-                    <lable for="small">
+                    <label for="small">
                         <input type="radio" name="size"  >
                         <spann> S</spann>
-                    </lable>  
+                    </label>  
                     
-                    <lable for="medium">
+                    <label for="medium">
                         <input type="radio" name="size" >
                         <spann> M</spann>
-                    </lable>  
+                    </label>  
 
-                    <lable for="large">
+                    <label for="large">
                         <input type="radio" name="size" >
                         <spann> L</spann>
-                    </lable>  
+                    </label>  
 
-                    <lable for="x-large">
+                    <label for="x-large">
                         <input type="radio" name="size" >
                         <spann> XL</spann>
-                    </lable>  
+                    </label>  
 
-                    <lable for="xx-large">
+                    <label for="xx-large">
                         <input type="radio" name="size" >
                         <spann> XXL</spann>
-                    </lable>  
+                    </label>  
 
                 </div>
                 <div class="color-select">
                     <p class="para"> Color</p>
-                    <lable for="red">
-                        <input type="radio" name="color">
+                    <label for="red">
+                        <input type="radio" name="color" id="color-1">
                         <spam class="color-1"></spam>
-                    </lable>
-                     <lable for="green">
-                        <input type="radio" name="color">
+                    </label>
+                     <label for="green">
+                        <input type="radio" name="color" id="color-2">
                         <spam class="color-2"></spam>
-                    </lable>
-                     <lable for="yellow">
-                        <input type="radio" name="color">
+                    </label>
+                     <label for="yellow">
+                        <input type="radio" name="color" id="color-3">
                         <spam class="color-3"></spam>
-                    </lable>
-                     <lable for="black">
-                        <input type="radio" name="color">
+                    </label>
+                     <label for="black">
+                        <input type="radio" name="color" id="color-4">
                         <spam class="color-4"></spam>
-                    </lable>
+                    </label>
                     
                 </div>
+                <div class="quentity">
+                    <p class="para"> Quentity</p>
+                    <label for="quentity">
+                        <input type="number" name="quentity" id="quentity" min="0" max="100">
+                    </label>
+                </div>
+                <button type="button" name="submit" class="submit" onclick="submit_clicked()"> Buy Now</button>
             </form>
         </div>
         
